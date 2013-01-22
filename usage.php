@@ -1,11 +1,11 @@
 <?php
 // Include/funct
-require_once dirname(__FILE__) . '/findmyshit.class.php';
+require_once dirname(__FILE__) . '/findmyiphone.class.php';
 function d($m) { echo "** D: $m\n"; }
 
 
 // Create object:
-$fms = new FindMyShit('user@me.com', 'password');
+$fms = new FindMyiPhone('user@me.com', 'password');
 
 // Enable debug:
 $fms->debug(true);

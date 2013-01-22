@@ -1,7 +1,7 @@
 <?php
 // Copyright 2011 _ALL RIGHTS RESERVED!_
 /**
-*	FindMyShit:
+*	FindMyiPhone:
 *		me.com (1.0) device manipulation tool
 *		written by rsully
 *	
@@ -131,7 +131,7 @@ class iDevice
 	}
 }
 
-class FindMyShit
+class FindMyiPhone
 {
 	private $auth = 'https://auth.me.com/authenticate';
 	private $auth_ret = 'https://me.com/find/';
