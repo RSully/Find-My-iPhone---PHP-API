@@ -133,12 +133,12 @@ class iDevice
 
 class FindMyiPhone
 {
-	private $auth = 'https://auth.me.com/authenticate';
-	private $auth_ret = 'https://me.com/find/';
-	private $auth_can = 'http://me.com/find';
+	private $auth = 'https://auth.icloud.com/authenticate';
+	private $auth_ret = 'https://icloud.com/find/';
+	private $auth_can = 'http://icloud.com/find';
 	
 	private $devs_partition = '';
-	private $devs_try_base = 'https://XYZ-fmipweb.me.com';
+	private $devs_try_base = 'https://XYZ-fmipweb.icloud.com';
 	private $devs = '';
 	
 	private $devs_ini = '/fmipservice/client/initClient';
@@ -171,7 +171,7 @@ class FindMyiPhone
 	public function debug($d) { $this->_debug = $d; }
 	public function login() {
 		$this->_lastSend = time();
-		$headers = array('Referer: https://auth.me.com/authenticate?service=findmyiphone&ssoNamespace=appleid&formID=loginForm&returnURL=aHR0cHM6Ly9tZS5jb20vZmluZC8=&anchor=findmyiphone&lang=en', 'Origin: https://auth.me.com', 'User-Agent: Mozilla/5.0 (Macintosh) Version/5.0.5', 'Content-Type: application/x-www-form-urlencoded');
+		$headers = array('Referer: https://auth.icloud.com/authenticate?service=findmyiphone&ssoNamespace=appleid&formID=loginForm&returnURL=aHR0cHM6Ly9tZS5jb20vZmluZC8=&anchor=findmyiphone&lang=en', 'Origin: https://auth.icloud.com', 'User-Agent: Mozilla/5.0 (Macintosh) Version/5.0.5', 'Content-Type: application/x-www-form-urlencoded');
 		$post = array('service' => 'findmyiphone', 
 					'ssoNamespace' => 'appleid', 
 					'returnURL' => base64_encode($this->auth_ret), 
